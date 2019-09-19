@@ -4,11 +4,13 @@ export default {
     ["import", { libraryName: "antd", libraryDirectory: "es", style: "css" }],
     ["@babel/plugin-proposal-decorators", { "legacy": true }]
   ],
-  "proxy": {
+  proxy: {
     "/api": {
       "target": "http://148.70.121.59:9001",
       "changeOrigin": true,
-      "pathRewrite": { "^/api": "" }
+      "pathRewrite": {
+        "^/api": ""
+      }
     }
   },
   "env": {
