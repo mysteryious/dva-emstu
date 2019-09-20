@@ -20,6 +20,10 @@ const routes = [
     // ]
   },
   {
+    path: "/presentation",
+    component: React.lazy(() => import("../views/presentation")),
+  },
+  {
     path: "/",
     redirect: "/teacher"
   }

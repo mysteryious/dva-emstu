@@ -12,40 +12,45 @@
     width: 100%;
     height: 100%;
   }
-  @media screen and (max-width: 1800px) {
+  @media screen and (max-width: 2000px) {
     .home{
-      position: relative;
       text-align: center;
+      display: flex;
+      flex-direction: column;
     }
-    .header {
+    .header {  
       width: 100%;
-      height: 50px;
-      line-height: 50px;
+      height: 100px;
+      line-height: 100px;
       background-color: rgba(63, 81, 181, 1);
       color: rgba(255, 255, 255, 1);
       font-size: 14px;
       border: 1px solid rgba(187, 187, 187, 1);
     }
     .main{
+      position: relative;
+      flex: 1;
+    }
+    .main-content{
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
-      width: 250px;
+      width: 500px;
       display: flex;
       flex-direction: column;
-      padding: 10px;
+      padding: 20px;
       .main-title{
-        height: 32px;
-        line-height: 32px;
+        height: 64px;
+        line-height: 64px;
         font-size: 18px;
       }
       .main-btns{
-       margin: 15px 0px;
-       margin-bottom: 20px;
+       margin: 30px 0px;
+       margin-bottom: 40px;
        span{
          color: #ccc;
-         padding: 5px 15px;
+         padding: 10px 30px;
          font-size: 13px;
          border-bottom:1px solid #ccc;
         }
@@ -55,22 +60,22 @@
         }
       }
       input,button{
-        height: 32px;
+        height: 50px;
         border: 1px solid #ccc;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
       }
       ::placeholder{
-        padding-left: 10px;
+        padding-left: 20px;
       }
       label{
         display: flex;
         justify-content: left;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
         font-size: 13px;
         input{
           margin-bottom: 0;
-          margin-right: 5px;
+          margin-right: 10px;
         }
       }
       button{
@@ -80,13 +85,86 @@
       }
     }
   }
-  @media screen and (max-width: 378px) {
-    .home {
+  @media screen and (max-width: 414px) {
+
+    html,body{
       width: 100%;
       height: 100%;
+      font-size: calc(100/375*100vw);
     }
-    .header {
-      background: palegreen;
+    .home{
+      width: 100%;
+      height: 100%;
+      font-size: 14px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {  
+      width: 100%;
+      height: calc(1rem);
+      line-height: 100px;
+      background-color: rgba(63, 81, 181, 1);
+      color: rgba(255, 255, 255, 1);
+      font-size: 14px;
+      border: 1px solid rgba(187, 187, 187, 1);
+    }
+    .main{
+      position: relative;
+      flex: 1;
+    }
+    .main-content{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      padding: calc(0.2rem);
+      .main-title{
+        height: calc(0.64rem);
+        line-height: calc(0.64rem);
+        font-size: 18px;
+      }
+      .main-btns{
+       margin: calc(0.3rem) 0px;
+       margin-bottom: calc(0.4rem);
+       span{
+         color: #ccc;
+         padding: calc(0.1rem) calc(0.3rem);
+         font-size: 13px;
+         border-bottom:1px solid #ccc;
+        }
+        .active{
+          color: rgba(63, 81, 181, 1);
+          border-bottom-color:rgba(63, 81, 181, 1);
+        }
+      }
+      input,button{
+        height: calc(0.4rem);
+        border: 1px solid #ccc;
+        margin-bottom: calc(0.3rem);
+      }
+      ::placeholder{
+        padding-left: calc(0.2rem);
+      }
+      label{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: calc(0.3rem);
+        font-size: 13px;
+        input{
+          margin-bottom: 0;
+          margin-right: calc(0.1rem);
+        }
+      }
+      button{
+        border: 0;
+        color: #fff;
+        background: blue;
+      }
     }
   }
 }
