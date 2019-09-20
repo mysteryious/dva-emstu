@@ -3,6 +3,7 @@
 
 .webpackrc.js配置
 
+```
 const path = require("path")
 export default {
   "extraBabelPlugins": [
@@ -29,5 +30,6 @@ export default {
 
   "hash": false,
 };
+```
 
 
