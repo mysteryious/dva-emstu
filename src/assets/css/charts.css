@@ -1,0 +1,112 @@
+:global * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:global input {
+  outline: none;
+  border: 0;
+}
+
+:global html,
+:global body,
+:global #root,
+:global .charts {
+  width: 100%;
+  height: auto;
+  font-size: calc(100/375*100vw);
+}
+
+@media screen and (max-width: 414px) {
+  .charts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f1f1;
+    font-size: 14px;
+  }
+  .header {
+    width: 100%;
+    height: calc(1rem);
+    line-height: calc(1rem);
+    background-color: #0076ff;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    border: 1px solid #bbbbbb;
+  }
+  .main {
+    flex: 1;
+  }
+  .mainNav {
+    width: 100%;
+    border: 1px solid #bbbbbb;
+    background: #fff;
+  }
+  .mainNav .grade {
+    width: 100%;
+    height: 80%;
+    display: flex;
+  }
+  .mainNav .grade .seleGrade {
+    flex: 2;
+  }
+  .mainNav .grade .gradeList {
+    flex: 8;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mainNav .grade .gradeList span {
+    height: calc(0.3rem);
+    width: calc(0.7rem);
+    background: skyblue;
+    border: 1px solid #ccc;
+    margin-right: calc(0.2rem);
+    margin-bottom: calc(0.2rem);
+    text-align: center;
+    line-height: calc(0.3rem);
+  }
+  .mainNav .namesbox {
+    width: 100%;
+    height: 20%;
+    font-size: 12px;
+    display: flex;
+  }
+  .mainNav .namesbox .names {
+    flex: 1;
+  }
+  .pie {
+    width: 100%;
+    height: calc(3rem);
+    background: #fff;
+    margin-top: calc(0.10rem);
+  }
+  .myChart {
+    width: 100%;
+    height: calc(3rem);
+    background: #fff;
+    margin-top: calc(0.10rem);
+  }
+  .footer {
+    width: 100%;
+    background-color: #f2f1f1;
+    border: 1px solid skyblue;
+    display: flex;
+  }
+  .footer .leftText {
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .leftText .p {
+    flex: 1;
+  }
+  .footer .rightText {
+    background: #268b7e;
+    flex: 1;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,51 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add -D antd
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.6.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/macbookair/Library/Caches/Yarn/v4/npm-fast-deep-equal-2.0.1-7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49/node_modules/fast-deep-equal/LICENSE' -> '/Volumes/d/senior/dva-emstu/node_modules/ajv-keywords/node_modules/fast-deep-equal/LICENSE'
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "start": "roadhog server",
+      "build": "roadhog build",
+      "lint": "eslint --ext .js src test",
+      "precommit": "npm run lint"
+    },
+    "dependencies": {
+      "dva": "^2.4.1",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0"
+    },
+    "devDependencies": {
+      "babel-plugin-dva-hmr": "^0.3.2",
+      "eslint": "^4.14.0",
+      "eslint-config-umi": "^0.1.1",
+      "eslint-plugin-flowtype": "^2.34.1",
+      "eslint-plugin-import": "^2.6.0",
+      "eslint-plugin-jsx-a11y": "^5.1.1",
+      "eslint-plugin-react": "^7.1.0",
+      "husky": "^0.12.0",
+      "redbox-react": "^1.4.3",
+      "roadhog": "^2.5.0-beta.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

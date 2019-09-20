@@ -1,3 +1,9 @@
+# dva-emstu
+重点学生成绩录入系统
+
+.webpackrc.js配置
+
+```js
 const path = require("path")
 export default {
   "extraBabelPlugins": [
@@ -24,3 +30,6 @@ export default {
 
   "hash": false,
 };
+```
+
+
