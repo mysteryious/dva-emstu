@@ -3,21 +3,11 @@ import React from 'react';
 const routes = [
   {
     path: "/teacher",
-    component: React.lazy(() => import("../views")),
-    // children: [
-    //   {
-    //     path: "/teacher/login",
-    //     component: React.lazy(() => import("../views/teacher/login"))
-    //   },
-    //   {
-    //     path: "/teacher/register",
-    //     component: React.lazy(() => import("../views/teacher/register"))
-    //   },
-    //   {
-    //     path: "/teacher",
-    //     redirect: "/teacher/login"
-    //   }
-    // ]
+    component: React.lazy(() => import("../views/login")),
+  },
+  {
+    path: "/charts",
+    component: React.lazy(() => import("../views/charts")),
   },
   {
     path: "/",
