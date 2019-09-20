@@ -3,7 +3,7 @@
 
 .webpackrc.js配置
 
-```
+```js
 const path = require("path")
 export default {
   "extraBabelPlugins": [
