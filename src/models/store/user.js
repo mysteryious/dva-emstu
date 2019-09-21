@@ -21,13 +21,21 @@ export default {
   },
   effects: {
     *login({ payload }, { call, put }) {
-      console.log(payload, "login")
       let data = yield call(Api.login, payload)
       // if (data.data.lenght) {
       //   yield put({ type: 'save' });
       // }
       return data.data
     },
+    *register({ payload }, { call, put }) {
+      let data = yield call(Api.register, payload)
+      console.log(data)
+      // if (data.data.lenght) {
+      //   yield put({ type: 'save' });
+      // }
+      return data.data
+    },
+
   },
 
 };
