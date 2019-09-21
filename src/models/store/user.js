@@ -15,7 +15,7 @@ export default {
       let data = JSON.parse(JSON.stringify(state));
       data = { ...action.payload };
       console.log(data)
-      let { username, password } = action.payload;
+      // let { username, password } = action.payload;
       return { ...data }
     }
   },

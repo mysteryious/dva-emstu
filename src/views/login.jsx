@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import RouterView from "../routes/RouterView";
 import { connect } from "dva"
 import { setocaltion, getocaltion } from "@/utils/login"
-import "@/assets/css/index.scss"
+import "@/assets/css/login.scss"
 
 
 const Index = (props) => {
@@ -11,7 +11,6 @@ const Index = (props) => {
   const [username, setUsername] = useState("panhuijuan");
   const [password, setPassword] = useState("123321");
   const [checked, setChecked] = useState(true);
-
 
   let data = getocaltion("authorization")
   if (data) {
