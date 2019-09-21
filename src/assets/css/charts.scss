@@ -58,8 +58,11 @@
       width: 100%;
       height: 100%;
       border: 1px solid rgba(187, 187, 187, 1);
-     @include juzuo;
+      @include juzuo;
       padding-left: 20px;
+      .active {
+        color: blue;
+      }
       .nav {
         margin-left: 10px;
         display: flex;

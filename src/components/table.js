@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 
 const Table = props => {
-  let { columns, data } = props
+  let { columns } = props
   return (
     <div>
       <div className="table-head">
