@@ -37,7 +37,7 @@ const Index = (props) => {
     }).then(res => {
       if (res.code === 1 && checked) {
         setocaltion("authorization", { username, password })
-        props.history.push("/statistics")
+        props.history.push("/charts")
       }
     })
   }
@@ -58,7 +58,7 @@ const Index = (props) => {
       }
     }).then(res => {
       if (res.code === 1 && checked) {
-        props.history.push("/statistics")
+        props.history.push("/charts")
       }
     })
   }

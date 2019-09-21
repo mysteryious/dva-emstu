@@ -37,7 +37,9 @@ const Charts = (props) => {
             <span>添加成绩+</span>
             <span>添加分析和解决方案+</span>
           </div>
-          <div><span>查看和编辑该学生所有成绩</span></div>
+          <div><span onClick={()=>{
+            props.history.push("/statistics")
+          }}>查看和编辑该学生所有成绩</span></div>
         </div>
       </div>
     </div>

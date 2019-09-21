@@ -14,8 +14,7 @@
   body,
   #root {
     width: 100%;
-    height: auto;
-    font-size: calc(100/375*100vw);
+    height: 100% ;
   }
 }
 @mixin juzhong {
@@ -29,7 +28,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 1922px) {
+@media screen and (max-width: 1920px) and (min-width: 375px) {
   .charts {
     width: 100%;
     height: 100%;
