@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import RouterView from "../routes/RouterView";
+import React, { useState } from 'react'
 import { connect } from "dva"
-import { setocaltion, getocaltion } from "@/utils/login"
+import { setocaltion } from "@/utils/login"
 import "@/assets/css/login.scss"
 
 

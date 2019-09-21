@@ -1,0 +1,123 @@
+:global {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  input,
+  button {
+    outline: none;
+    border: 0;
+  }
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+  }
+}
+@mixin juzhong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin juzuo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+@mixin juyou {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+@media screen and (max-width: 1800px) {
+  .dialong {
+    width: 45%;
+    height: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 20px 25px;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px 4px 4px 4px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+  }
+  .header {
+    width: 100%;
+    height: 12%;
+    font-size: 20px;
+  }
+  .main {
+    flex: 1;
+    @include juzhong;
+    flex-direction: column;
+    li {
+      list-style: none;
+      height: 65px;
+      @include juzhong;
+      input {
+        margin-left: 10px;
+      }
+      span {
+        width: 95px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+      }
+      button {
+        width: 95px;
+        height: 40px;
+        line-height: 20px;
+        border-radius: 4px 4px 4px 4px;
+        background-color: rgba(230, 241, 252, 1);
+        text-align: center;
+        border: 1px solid rgba(163, 208, 253, 1);
+      }
+      .text {
+        width: 203px;
+        height: 55px;
+        line-height: 20px;
+        border-radius: 4px 4px 4px 4px;
+        background-color: rgba(255, 255, 255, 1);
+        text-align: center;
+        border: 1px solid rgba(220, 223, 230, 1);
+      }
+    }
+  }
+  .footer {
+    height: 22%;
+    span {
+      float: right;
+    }
+    button {
+      width: 65px;
+      height: 36px;
+      line-height: 20px;
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 1);
+      text-align: center;
+      border: 1px solid rgba(217, 217, 217, 1);
+      margin-right: 10px;
+    }
+    .btnActive {
+      background-color: rgba(24, 144, 255, 1);
+      color: #fff;
+    }
+  }
+  .time,
+  input {
+    width: 272px;
+    height: 40px;
+    line-height: 20px;
+    border-radius: 4px 4px 4px 4px;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    border: 1px solid rgba(220, 223, 230, 1);
+  }
+}

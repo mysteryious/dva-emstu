@@ -83,6 +83,9 @@
         color: #fff;
         background: blue;
       }
+      button:hover{
+        background: rgba(63, 81, 181, 1);
+      }
     }
   }
   @media screen and (max-width: 378px) {
