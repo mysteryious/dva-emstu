@@ -10,6 +10,10 @@ const routes = [
     component: React.lazy(() => import("../views/charts")),
   },
   {
+    path: "/statistics",
+    component: React.lazy(() => import("../views/statistics")),
+  },
+  {
     path: "/",
     redirect: "/teacher"
   }
