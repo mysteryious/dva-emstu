@@ -10,8 +10,8 @@ const routes = [
     component: React.lazy(() => import("../views/charts")),
   },
   {
-    path: "/presentation",
-    component: React.lazy(() => import("../views/presentation")),
+    path: "/statistics",
+    component: React.lazy(() => import("../views/statistics")),
   },
   {
     path: "/",

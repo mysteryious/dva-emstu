@@ -9,6 +9,7 @@ const app = dva();
 
 // 3. Model
 //  app.model(require('./models/store').default);
+app.model(require('./models/allList').default)
 createModel(app)
 
 // 4. Router
