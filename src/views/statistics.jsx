@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { connect } from 'dva'
 import ChangeDialog from '@/components/ChangeDialog'
 import DeleteDialog from '@/components/deleteDialog'
-import '@/assets/css/statistics.css'
+import '@/assets/css/statistics.scss'
 
 const AllList = props => {
   console.log(props)

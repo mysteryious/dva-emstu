@@ -5,11 +5,24 @@ import echarts from 'echarts';
 const option = {
   title: {
     text: 'xxx同学的日周考成绩统计图',
+    subtext: '仅供参考',
+    textStyle: {
+      color: '#477A74',
+      fontWeight: 'normal'
+    }
   },
   tooltip: {
-    trigger: 'axis'
+    trigger: 'axis',
+    position: 'top',
+    axisPointer: {
+      type: 'cross',
+      label: {
+        backgroundColor: 'rgb(183, 220, 57)'
+      }
+    }
   },
   legend: {
+    y: '25px',
     data: ['技能', '理论']
   },
   grid: {
@@ -18,13 +31,16 @@ const option = {
     bottom: '3%',
     containLabel: true
   },
+
   toolbox: {
     show: true,
+    y: '20px',
+    itemSize: 11,
     feature: {
-      dataZoom: {
-        yAxisIndex: 'none'
-      },
-      dataView: { readOnly: false },
+      // dataZoom: {
+      //   yAxisIndex: 'none'
+      // },
+      // dataView: { readOnly: false },
       magicType: { type: ['line', 'bar'] },
       restore: {},
     }
@@ -116,7 +132,7 @@ const myChart = (props) => {
     }
   }, [currentIndex])
 
-  return  <div id="pie" style={{"width":"100%","height":"55%","marginTop":"10px"}}></div>
+  return <div id="pie" style={{ "width": "100%", "height": "55%", "marginTop": "18px" }}></div>
 };
 
 export default myChart;
