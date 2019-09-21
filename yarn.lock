@@ -12179,11 +12179,3 @@ yargs@~3.10.0:
     cliui "^2.1.0"
     decamelize "^1.0.0"
     window-size "0.1.0"
-<<<<<<< HEAD
-=======
-
-zrender@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.npm.taobao.org/zrender/download/zrender-4.1.0.tgz#866ab97d0744c473d9b314ac5a89e7207c140608"
-  integrity sha1-hmq5fQdExHPZsxSsWonnIHwUBgg=
->>>>>>> 9ea3aea622f25e0d3eaf2b745f68aaa25a4093fc
