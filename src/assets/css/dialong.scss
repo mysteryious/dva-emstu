@@ -31,9 +31,9 @@
   justify-content: right;
   align-items: center;
 }
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1920px) and (min-width: 375px) {
   .dialong {
-    width: 45%;
+    width: 580px;
     height: 50%;
     position: fixed;
     top: 50%;

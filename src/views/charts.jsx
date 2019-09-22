@@ -40,7 +40,7 @@ const Charts = (props) => {
           </div>
         </div>
         <div className={style.mainBtns}>
-          添加学生+:
+          <span>添加学生+:</span>
           <input type="text" placeholder="输入姓名" />
           <input type="text" placeholder="末班次数" />
           <input type="text" placeholder="结对子，帮扶对象" />
